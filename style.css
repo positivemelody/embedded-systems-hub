@@ -1,0 +1,106 @@
+/* 
+Global styling block defining colors,
+fonts, and base layout.
+*/
+
+body{
+
+font-family: Arial;
+margin:0;
+background:#0f172a;
+color:white;
+
+}
+
+/*
+Header styling block
+*/
+
+header{
+
+text-align:center;
+padding:30px;
+background:#020617;
+
+}
+
+/*
+Navigation menu styling
+*/
+
+nav{
+
+display:flex;
+justify-content:center;
+gap:20px;
+background:#1e293b;
+padding:15px;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+
+}
+
+/*
+Section layout block
+*/
+
+section{
+
+padding:40px;
+
+}
+
+/*
+Card component used for topics and projects
+*/
+
+.card{
+
+background:#1e293b;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+
+}
+
+/*
+Button styling block
+*/
+
+button{
+
+background:#38bdf8;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+border-radius:5px;
+
+}
+
+/*
+Footer styling
+*/
+
+footer{
+
+text-align:center;
+padding:20px;
+background:#020617;
+
+}
+
+/*
+Light mode styling activated dynamically
+*/
+
+.light{
+
+background:white;
+color:black;
+
+}

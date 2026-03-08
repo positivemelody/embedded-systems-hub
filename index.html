@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- 
+This block defines page metadata including encoding,
+viewport for responsive design, and page title.
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Systems Portal</title>
+
+<!-- 
+This block loads the external CSS file
+responsible for styling the entire website.
+-->
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- 
+This block represents the main header
+which introduces the website and its purpose.
+-->
+
+<header>
+
+<h1>Embedded Systems Portal</h1>
+<p>Microcontrollers • Automotive Systems • AI Hardware</p>
+
+</header>
+
+
+<!-- 
+This block creates the navigation menu
+for moving between different sections of the site.
+-->
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#microcontrollers">Microcontrollers</a>
+<a href="#automotive">Automotive</a>
+<a href="#ai">AI Embedded</a>
+<a href="#projects">Projects</a>
+
+<button onclick="toggleMode()">Toggle Mode</button>
+
+</nav>
+
+
+<!-- 
+This block provides a search input field
+allowing users to filter projects dynamically.
+-->
+
+<section>
+
+<input type="text" id="searchInput" placeholder="Search projects..." onkeyup="searchProjects()">
+
+</section>
+
+
+<!-- 
+This section explains what embedded systems are
+and introduces the topic to visitors.
+-->
+
+<section id="about">
+
+<h2>What Are Embedded Systems?</h2>
+
+<p>
+Embedded systems are computing systems designed
+to perform specific tasks within larger systems
+such as vehicles, robots, industrial machines,
+and medical devices.
+</p>
+
+</section>
+
+
+<!-- 
+This section lists popular microcontrollers
+commonly used in embedded development.
+-->
+
+<section id="microcontrollers">
+
+<h2>Microcontrollers</h2>
+
+<div class="card">Arduino Platform</div>
+<div class="card">STM32 ARM Microcontrollers</div>
+<div class="card">ESP32 IoT Controller</div>
+
+</section>
+
+
+<!-- 
+This section describes automotive embedded technologies.
+-->
+
+<section id="automotive">
+
+<h2>Automotive Embedded Systems</h2>
+
+<div class="card">CAN Bus Communication</div>
+<div class="card">OBD Vehicle Diagnostics</div>
+<div class="card">Electronic Control Units (ECU)</div>
+
+</section>
+
+
+<!-- 
+This section introduces embedded AI hardware.
+-->
+
+<section id="ai">
+
+<h2>AI Embedded Hardware</h2>
+
+<div class="card">Raspberry Pi AI Projects</div>
+<div class="card">NVIDIA Jetson Edge AI</div>
+
+</section>
+
+
+<!-- 
+This section displays project examples
+that can be filtered using the search function.
+-->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card project">
+<h3>ABS Braking Simulation</h3>
+<p>Simulation of Anti-lock Braking System using microcontroller logic.</p>
+<button onclick="showProject()">View</button>
+</div>
+
+<div class="card project">
+<h3>Object Detection Robot</h3>
+<p>Robot capable of detecting objects using AI camera.</p>
+<button onclick="showProject()">View</button>
+</div>
+
+<div class="card project">
+<h3>Smart Home Controller</h3>
+<p>IoT system controlling lights and appliances remotely.</p>
+<button onclick="showProject()">View</button>
+</div>
+
+</section>
+
+
+<!-- 
+This block represents the footer area
+displaying copyright information.
+-->
+
+<footer>
+
+<p>Embedded Systems Portal - Open Source Learning</p>
+
+</footer>
+
+
+<!-- 
+This block loads the JavaScript file
+responsible for interactivity.
+-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
