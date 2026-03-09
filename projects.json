@@ -1,0 +1,26 @@
+[
+  {
+    "title": "ABS Braking Simulation",
+    "category": "Automotive",
+    "level": "Intermediate",
+    "description": "Simulation of Anti-lock Braking System logic using a microcontroller.",
+    "image": "assets/images/abs.png",
+    "code_link": "#"
+  },
+  {
+    "title": "Object Detection Robot",
+    "category": "AI Embedded",
+    "level": "Advanced",
+    "description": "Robot capable of detecting objects using AI camera.",
+    "image": "assets/images/robot.png",
+    "code_link": "#"
+  },
+  {
+    "title": "Smart Home Controller",
+    "category": "Microcontrollers",
+    "level": "Beginner",
+    "description": "IoT system controlling lights and appliances remotely.",
+    "image": "assets/images/home.png",
+    "code_link": "#"
+  }
+]
