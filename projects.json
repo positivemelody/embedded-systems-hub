@@ -12,7 +12,7 @@
     "category": "AI Embedded",
     "level": "Advanced",
     "description": "Robot capable of detecting objects using AI camera.",
-    "image": "assets/images/robot.png",
+    "image": "assets/images/robot.jpg",
     "code_link": "#"
   },
   {
@@ -23,4 +23,5 @@
     "image": "assets/images/home.png",
     "code_link": "#"
   }
+
 ]
