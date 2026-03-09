@@ -1,106 +1,110 @@
-/* 
-Global styling block defining colors,
-fonts, and base layout.
-*/
-
+/* Global Styles */
 body{
-
-font-family: Arial;
-margin:0;
-background:#0f172a;
-color:white;
-
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#0f172a;
+  color:white;
+  transition: background 0.5s, color 0.5s;
 }
-
-/*
-Header styling block
-*/
 
 header{
-
-text-align:center;
-padding:30px;
-background:#020617;
-
+  text-align:center;
+  padding:30px;
+  background:#020617;
 }
 
-/*
-Navigation menu styling
-*/
+header .logo{
+  height:80px;
+  margin-bottom:10px;
+}
 
 nav{
-
-display:flex;
-justify-content:center;
-gap:20px;
-background:#1e293b;
-padding:15px;
-
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  background:#1e293b;
+  padding:10px;
 }
 
 nav a{
-
-color:white;
-text-decoration:none;
-
+  color:white;
+  text-decoration:none;
 }
 
-/*
-Section layout block
-*/
+nav input{
+  padding:5px;
+  border-radius:5px;
+  border:none;
+  margin-left:10px;
+}
+
+nav button{
+  margin-left:10px;
+  padding:5px 10px;
+  border-radius:5px;
+  border:none;
+  cursor:pointer;
+  background:#38bdf8;
+}
 
 section{
-
-padding:40px;
-
+  padding:40px;
 }
-
-/*
-Card component used for topics and projects
-*/
 
 .card{
-
-background:#1e293b;
-padding:20px;
-margin:15px 0;
-border-radius:10px;
-
+  background:#1e293b;
+  padding:20px;
+  margin:15px 0;
+  border-radius:10px;
+  transition: transform 0.3s;
 }
 
-/*
-Button styling block
-*/
-
-button{
-
-background:#38bdf8;
-border:none;
-padding:10px 15px;
-cursor:pointer;
-border-radius:5px;
-
+.card:hover{
+  transform: scale(1.05);
 }
 
-/*
-Footer styling
-*/
+.project-card{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  background:#1e293b;
+  padding:20px;
+  margin:10px 0;
+  border-radius:10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover{
+  transform: scale(1.02);
+}
+
+.project-card img{
+  width:150px;
+  height:auto;
+  margin-right:20px;
+}
+
+.project-card div{
+  flex:1;
+}
 
 footer{
-
-text-align:center;
-padding:20px;
-background:#020617;
-
+  text-align:center;
+  padding:20px;
+  background:#020617;
 }
 
-/*
-Light mode styling activated dynamically
-*/
-
 .light{
+  background:white;
+  color:black;
+}
 
-background:white;
-color:black;
+.light nav{
+  background:#ddd;
+}
 
+.light .card, .light .project-card{
+  background:#eee;
+  color:black;
 }
